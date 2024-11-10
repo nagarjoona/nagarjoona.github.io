@@ -1,157 +1,152 @@
-# Welcome to Jekyll!
+# Jekyll에 오신 것을 환영합니다!
 #
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve -l -H localhost`. If you change this file, please restart the 
-# server process.
+# 이 구성 파일은 사이트 전체에 영향을 미치는 설정을 위한 것입니다. 설정은 한 번만 설정하고 이후에 자주 수정할 필요가 없습니다.
+# 기술적인 이유로, 이 파일은 `jekyll serve -l -H localhost` 명령어를 사용할 때 자동으로 다시 로드되지 않습니다.
+# 이 파일을 변경하면 서버 프로세스를 다시 시작해야 합니다.
 
-# Basic Site Settings
-locale                   : "en-US"
-title                    : "park jaejun / Joon's Park"
-title_separator          : "-"
-name                     : &name "park jaejun"
-description              : &description "iOS 개발 꿈나무"
-url                      : https://nagarjoona.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "nagarjoona/nagarjoona.github.io"
+# 기본 사이트 설정
+locale                   : "en-US"  # 사이트의 기본 로케일 설정 (예: "en-US", "ko-KR")
+title                    : "park jaejun / Joon's Park"  # 사이트의 제목 (예: "Jaejun's Blog")
+title_separator          : "-"  # 제목과 구분자 사이의 구분 문자 (예: "|")
+name                     : &name "park jaejun"  # 사이트 소유자의 이름 (예: "박재준")
+description              : &description "iOS 개발 꿈나무"  # 사이트 설명 (예: "개발자 블로그")
+url                      : "https://nagarjoona.github.io"  # 사이트의 기본 호스트명 및 프로토콜 (예: "https://mmistakes.github.io")
+baseurl                  : ""  # 사이트의 하위 경로 (예: "/blog")
+repository               : "nagarjoona/nagarjoona.github.io"  # GitHub 저장소 경로 (예: "username/repository")
 
-# Site Author - The following control what appear as part of the author content on the side bar.
-#               If a field is blank the icon and link will not appear, otherwise it will be shown.
-#               Additional customization can be done by editing /_includes/author-profile.html
+# 사이트 저자 설정 - 사이드바에 나타나는 저자 정보를 제어합니다.
+#                   비어 있는 필드는 아이콘과 링크가 표시되지 않으며, 입력된 경우에만 표시됩니다.
+#                   추가적인 커스터마이징은 /_includes/author-profile.html을 편집하여 가능합니다.
 author:
-  # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
-  uri              : # URL
-  email            : "none@example.org" 
+  # 저자 정보
+  avatar           : "profile.png"  # 저자의 프로필 이미지 파일명 (예: "avatar.jpg")
+  name             : "박재준 (Joon's Park)"  # 저자 이름 (예: "Jaejun Park")
+  pronouns         : ""  # 대명사 (예: "she/her", "they/them")
+  bio              : "iOS 개발자 꿈나무이자, 새로운 기술을 배우는 것을 좋아하는 열정적인 학습자"  # 저자 소개 문구 (예: "Full-stack 개발자, 지속적인 학습자")
+  location         : "Earth"  # 저자의 위치 (예: "Seoul, South Korea")
+  employer         : ""  # 고용주 정보 (예: "Google")
+  uri              : ""  # 저자 개인 웹사이트 URL (예: "https://myportfolio.com")
+  email            : "none@example.org"  # 이메일 주소 (예: "contact@mydomain.com")
 
-  # Academic websites
-  arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-  impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
-  semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : # URL
-  scopus           : # URL
+  # 학술 웹사이트
+  arxiv            : ""  # arXiv 프로필 링크 (예: "https://arxiv.org/a/12345")
+  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"  # Google Scholar 링크 (예: "https://scholar.google.com/citations?user=abcd1234")
+  impactstory      : ""  # Impactstory 링크
+  orcid            : "http://orcid.org/yourorcidurl"  # ORCID 링크 (예: "http://orcid.org/0000-0001-2345-6789")
+  semantic         : ""  # Semantic Scholar 링크
+  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"  # PubMed 링크
+  researchgate     : ""  # ResearchGate 링크
+  scopus           : ""  # Scopus 링크
 
-  # Repositories and software development
-  bitbucket        : # Username - Update with your username on the site
-  codepen          : # Username
-  dribbble         : # Username
-  github           : "academicpages"
-  kaggle           : # Username  
-  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
+  # 코드 저장소 및 소프트웨어 개발 사이트
+  bitbucket        : ""  # 사용자 이름 - 사이트의 사용자 이름으로 업데이트 필요 (예: "username")
+  codepen          : ""  # 사용자 이름 (예: "username")
+  dribbble         : ""  # 사용자 이름 (예: "username")
+  github           : "https://github.com/nagarjoona"  # GitHub 프로필 링크 (예: "https://github.com/username")
+  kaggle           : ""  # 사용자 이름 (예: "username")
+  stackoverflow    : ""  # 사용자 번호 또는 사용자 번호와 이름 (예: "12345" 또는 "12345/username")
 
-  # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
-  facebook         : # Username
-  flickr           : # Username
-  foursquare       : # Username
-  goodreads        : # Username
-  google_plus      : # Username
-  keybase          : # Username
-  instagram        : # Username
-  lastfm           : # Username
-  linkedin         : # Username
-  mastodon         : # URL
-  medium           : # URL
-  pinterest        : # Username
-  soundcloud       : # Username
-  steam            : # Username
-  telegram         : # URL
-  tumblr           : # Username
-  twitter          : # Username for X / Twitter
-  vine             : # Username
-  weibo            : # Username
-  wikipedia        : # Username
-  xing             : # Username
-  youtube          : # Username
-  zhihu            : # Username
+  # 소셜 미디어
+  bluesky          : "bsky.app"  # Bluesky 사용자 이름 (예: "bsky.app/username")
+  facebook         : ""  # 사용자 이름 (예: "username")
+  flickr           : ""  # 사용자 이름 (예: "username")
+  foursquare       : ""  # 사용자 이름 (예: "username")
+  goodreads        : ""  # 사용자 이름 (예: "username")
+  google_plus      : ""  # 사용자 이름 (폐지됨)
+  keybase          : ""  # 사용자 이름 (예: "username")
+  instagram        : ""  # 사용자 이름 (예: "username")
+  lastfm           : ""  # 사용자 이름 (예: "username")
+  linkedin         : "your_linkedin_username"  # LinkedIn 사용자 이름 (예: "username")
+  mastodon         : ""  # URL (예: "https://mastodon.social/@username")
+  medium           : ""  # URL (예: "https://medium.com/@username")
+  pinterest        : ""  # 사용자 이름 (예: "username")
+  soundcloud       : ""  # 사용자 이름 (예: "username")
+  steam            : ""  # 사용자 이름 (예: "username")
+  telegram         : ""  # URL (예: "https://t.me/username")
+  tumblr           : ""  # 사용자 이름 (예: "username")
+  twitter          :
+    username       : "Joon50401940"  # X (Twitter) 사용자 이름 (예: "username")
+  vine             : ""  # 사용자 이름 (폐지됨)
+  weibo            : ""  # 사용자 이름 (예: "username")
+  wikipedia        : ""  # 사용자 이름 (예: "username")
+  xing             : ""  # 사용자 이름 (예: "username")
+  youtube          : ""  # 사용자 이름 (예: "username")
+  zhihu            : ""  # 사용자 이름 (예: "username")
 
-# Publication Category - The following the list of publication categories and their headings
+# 출판물 카테고리 - 다음은 출판물 카테고리 및 해당 제목 목록입니다.
 publication_category:
   books:
-    title: 'Books'
+    title: 'Books'  # 책 출판물 제목 (예: "출판된 도서 목록")
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Journal Articles'  # 저널 기사 제목 (예: "저널에 발표된 논문")
   conferences:
-    title: 'Conference Papers'
+    title: 'Conference Papers'  # 학회 논문 제목 (예: "학회 발표 논문")
 
-# Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : false # true, false (default)
-words_per_minute         : 160
-future                   : true
-read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false #change to true to add link to talkmap on talks page
+# 사이트 설정
+teaser                   : ""  # 기본 티저 이미지 파일명 (예: "teaser.png"), /images/에 위치
+breadcrumbs              : false # 사이트에 빵부스러기 네비게이션을 표시할지 여부 (true/false, 기본값: false)
+words_per_minute         : 160  # 읽기 속도 설정 (분당 단어 수, 예: 200)
+future                   : true # 미래의 게시물 표시 여부 (true/false)
+read_more                : "disabled" # 발췌문에 "더 읽기" 링크 추가 여부 (예: "enabled" 또는 "disabled")
+talkmap_link             : false # 강연 페이지에 talkmap 링크 추가 여부 (true/false)
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : disqus  # 댓글 제공자 설정 (예: "disqus", "facebook")
   disqus:
-    shortname            :
+    shortname            : "YOUR_DISQUS_SHORTNAME"  # Disqus 단축 이름 설정 (예: "myblog")
   discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+    server               : ""  # Discourse 서버 설정 (예: "https://discourse.example.com")
   facebook:
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    appid                : ""  # 페이스북 앱 ID (예: "1234567890")
+    num_posts            : 5  # 댓글 표시 수 (예: 5)
+    colorscheme          : ""  # 댓글 색상 테마 (예: "light", "dark")
 staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages" # "master", "gh-pages"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
+  allowedFields          : ['name', 'email', 'url', 'message']  # Staticman에서 허용하는 필드 목록
+  branch                 : "gh-pages"  # 댓글이 저장될 브랜치 설정 (예: "main")
+  commitMessage          : "New comment."  # 새 댓글에 대한 커밋 메시지 (예: "새로운 댓글 추가")
+  filename               : comment-{@timestamp}  # 댓글 파일 이름 형식 (예: "comment-123456789.yml")
+  format                 : "yml"  # 댓글 형식 (예: "json" 또는 "yml")
+  moderation             : true  # 댓글 승인 필요 여부 (true/false)
+  path                   : "_data/comments/{options.slug}"  # 댓글 저장 경로
+  requiredFields         : ['name', 'email', 'message']  # 필수 입력 필드 (예: ['name', 'message'])
   transforms:
-    email                : "md5"
+    email                : "md5"  # 이메일 변환 방식 (예: "sha256")
   generatedFields:
     date:
-      type               : "date"
+      type               : "date"  # 날짜 필드 형식 (예: "datetime")
       options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+        format           : "iso8601"  # 날짜 형식 설정 (예: "timestamp-seconds")
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
-  path                   : # blank (default) uses feed.xml
+  hide                   : false  # RSS 피드를 숨길지 여부 (true/false)
+  path                   : ""  # RSS 피드 경로 (예: "feed.xml")
 
+# SEO 관련 설정
+google_site_verification : ""  # Google 사이트 인증 코드 (예: "abc123")
+bing_site_verification   : ""  # Bing 사이트 인증 코드 (예: "xyz789")
+alexa_site_verification  : ""  # Alexa 사이트 인증 코드
+yandex_site_verification : ""  # Yandex 사이트 인증 코드
 
-# SEO Related
-google_site_verification :
-bing_site_verification   :
-alexa_site_verification  :
-yandex_site_verification :
-
-
-# Social Sharing
+# 소셜 공유 설정
 twitter:
-  username               : &twitter
+  username               : &twitter "Joon50401940"  # 트위터 사용자 이름 (예: "mytwitterhandle")
 facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 :  # Open Graph/Twitter default site image
-# For specifying social profiles
+  username               : ""  # 페이스북 사용자 이름 (예: "username")
+  app_id                 : ""  # 페이스북 앱 ID (예: "1234567890")
+  publisher              : ""  # 페이스북 프로필 URL (예: "https://facebook.com/username")
+og_image                 : "images/profile.png"  # Open Graph/Twitter 기본 사이트 이미지 (예: "images/og_default.png")
+# 소셜 프로필을 지정하기 위한 설정
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : ""  # 소셜 프로필 유형 ("Person" 또는 "Organization")
+  name                   : ""  # 사용자의 이름이 사이트 이름과 다른 경우 설정
+  links: []  # 소셜 미디어 프로필에 대한 링크 배열 (예: ["https://twitter.com/myprofile", "https://linkedin.com/in/myprofile"])
 
-
-# Analytics
+# 분석 설정
 analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider               : "false"  # 분석 제공자 설정 (예: "google", "custom")
   google:
-    tracking_id          :
+    tracking_id          : ""  # Google 추적 ID (예: "UA-12345678-9")
 
-
-# Reading Files
+# 파일 읽기 설정
 include:
   - .htaccess
   - _pages
@@ -186,31 +181,28 @@ exclude:
 keep_files:
   - .git
   - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+encoding: "utf-8"  # 파일 인코딩 설정 (예: "utf-8")
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"  # 마크다운 파일 확장자 목록 (예: "md,markdown")
 
+# 변환 설정
+markdown: kramdown  # 마크다운 변환기 설정 (예: "kramdown")
+highlighter: rouge  # 코드 하이라이터 설정 (예: "rouge", "pygments")
+lsi: false  # LSI 사용 여부 (true/false)
+excerpt_separator: "\n\n"  # 발췌문 구분자 설정 (예: "<!--more-->")
+incremental: false  # 점진적 빌드 사용 여부 (true/false)
 
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-
-
-# Markdown Processing
+# 마크다운 처리 설정
 kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+  input: GFM  # GitHub Flavored Markdown 사용 여부 (예: "GFM")
+  hard_wrap: false  # 하드 랩핑 사용 여부 (true/false)
+  auto_ids: true  # 자동 ID 생성 여부 (true/false)
+  footnote_nr: 1  # 각주 번호 시작 값 (예: 1)
+  entity_output: as_char  # 엔터티 출력 방식 (예: "as_char", "as_decimal")
+  toc_levels: 1..6  # 목차 레벨 설정 (예: 1..3)
+  smart_quotes: lsquo,rsquo,ldquo,rdquo  # 스마트 인용 부호 설정 (예: "lsquo,rsquo,ldquo,rdquo")
+  enable_coderay: false  # CodeRay 사용 여부 (true/false)
 
-
-# These settings control the types of collections used by the template
+# 템플릿에서 사용되는 컬렉션 종류 설정
 collections:
   teaching:
     output: true
@@ -225,8 +217,7 @@ collections:
     output: true
     permalink: /:collection/:path/
 
-
-# These settings control how pages and collections are included in the site
+# 페이지 및 컬렉션을 사이트에 포함하는 방식 제어
 defaults:
   # _posts
   - scope:
@@ -282,21 +273,18 @@ defaults:
       author_profile: true
       share: true
 
-
-# Sass/SCSS
+# Sass/SCSS 설정
 sass:
-  sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  sass_dir: _sass  # Sass 디렉토리 경로 (예: "_sass")
+  style: compressed # 출력 스타일 설정 (예: "compressed", "expanded")
 
-
-# Outputting
-permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
+# 출력 설정
+permalink: /:categories/:title/  # 페이지 링크 형식 설정 (예: "/:categories/:title/")
+paginate: 5 # 한 페이지에 표시할 포스트 수 (예: 5)
 # paginate_path: /page:num/
-timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Etc/UTC # 타임존 설정 (예: "Asia/Seoul", "Etc/UTC")
 
-
-# Plugins
+# 플러그인 설정
 plugins:
   - jekyll-feed
   - jekyll-gist
@@ -304,7 +292,7 @@ plugins:
   - jekyll-sitemap
   - jemoji
 
-# Mimic GitHub Pages with --safe
+# GitHub Pages와 유사하게 --safe 옵션 사용
 whitelist:
   - jekyll-feed
   - jekyll-gist
@@ -312,14 +300,12 @@ whitelist:
   - jekyll-sitemap
   - jemoji
 
-
-# Archives
+# 아카이브 설정
 #  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
+#  - GitHub Pages와 호환되는 Liquid 기반 아카이브 페이지 (기본값: liquid)
+#  - Jekyll Archives 플러그인 아카이브 페이지 (jekyll-archives)
+#  Path (예시)
+#  - Liquid 방법을 사용할 경우 아카이브 페이지는 지정된 경로에 있어야 하며, 그렇지 않으면 링크가 깨질 수 있습니다.
 #  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
 #  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path/my-awesome-category/index.html ~> path: /
@@ -341,10 +327,9 @@ tag_archive:
 #     category: /categories/:name/
 #     tag: /tags/:name/
 
-
-# HTML Compression
+# HTML 압축 설정
 # - http://jch.penibelst.de/
 compress_html:
-  clippings: all
+  clippings: all  # 모든 HTML 클리핑을 압축 (예: "all")
   ignore:
-    envs: development
+    envs: development  # 개발 환경에서는 HTML 압축을 무시
